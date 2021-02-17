@@ -32,5 +32,16 @@ namespace EquazioniLibrary.Test
             bool risultato_effettivo = Equazioni.IsDegree2(a);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
+
+        [TestMethod]
+        public void Delta()
+        {
+            double a = 2;
+            double b = 6;
+            double c = 2;
+            double risultato_aspettato = 20;
+            double risultato_effettivo = Equazioni.Delta(a, b, c);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
     }
 }
