@@ -27,5 +27,17 @@ namespace EquazioniLibrary
                 return false;
             }
         }
+
+        public static bool IsDegree2(double a)
+        {
+            if (a == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
