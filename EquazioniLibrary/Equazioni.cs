@@ -16,9 +16,9 @@ namespace EquazioniLibrary
             }
         }
 
-        public static bool IsInconsisted(double b)
+        public static bool IsInconsisted(double a, double b)
         {
-            if (b != 0)
+            if (a == 0 && b != 0)
             {
                 return true;
             }

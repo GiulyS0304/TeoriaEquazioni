@@ -18,9 +18,10 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void EquazioneImpossibile()
         {
+            double a = 0;
             double b = 10;
             bool risultato_aspettato = true;
-            bool risultato_effettivo = Equazioni.IsInconsisted(b);
+            bool risultato_effettivo = Equazioni.IsInconsisted(a, b);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
 
