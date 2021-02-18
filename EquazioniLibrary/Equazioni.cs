@@ -69,5 +69,24 @@ namespace EquazioniLibrary
                 return "Non è un'equazione di secondo grado";
             }
         }
+
+        public static string EquationDegree1(double a, double b)
+        {
+            string risultato;
+
+            if (a == 0 && b == 0)
+            {
+                risultato = "INDETERMINATA";
+            }
+            else if (a != 0 && b == 0)
+            {
+                risultato = "IMPOSSIBILE";
+            }
+            else
+            {
+                risultato = $"{-(b / a)}";
+            }
+            return risultato;
+        }
     }   
 }

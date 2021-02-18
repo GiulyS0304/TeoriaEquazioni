@@ -77,5 +77,15 @@ namespace EquazioniLibrary.Test
             string risultato_effettivo = Equazioni.CalcoloEquazioneDiSecondoGrado(a, b, c);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
+
+        [TestMethod]
+        public void CalcoloEquazioneDiPrimoGrado()
+        {
+            double a = 3;
+            double b = 9;
+            string risultato_aspettato = $"{-3}";
+            string risultato_effettivo = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
     }
 }
