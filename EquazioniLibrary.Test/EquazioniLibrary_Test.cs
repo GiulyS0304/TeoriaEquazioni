@@ -44,5 +44,38 @@ namespace EquazioniLibrary.Test
             double risultato_effettivo = Equazioni.Delta(a, b, c);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
+
+        [TestMethod]
+        public void CalcoloEquazioneDiSecondoGrado1()
+        {
+            double a = 1;
+            double b = 5;
+            double c = 6;
+            string risultato_aspettato = $"Ci sono due soluzioni {-2} e {-3}";
+            string risultato_effettivo = Equazioni.CalcoloEquazioneDiSecondoGrado(a, b, c);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
+        public void CalcoloEquazioneDiSecondoGrado2()
+        {
+            double a = 1;
+            double b = -2;
+            double c = 1;
+            string risultato_aspettato = $"C'è solo una soluzione {1}";
+            string risultato_effettivo = Equazioni.CalcoloEquazioneDiSecondoGrado(a, b, c);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
+        public void CalcoloEquazioneDiSecondoGrado3()
+        {
+            double a = 1;
+            double b = 1;
+            double c = 1;
+            string risultato_aspettato = "Non ci sono soluzioni, perchè l'equazione è IMPOSSIBILE";
+            string risultato_effettivo = Equazioni.CalcoloEquazioneDiSecondoGrado(a, b, c);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
     }
 }

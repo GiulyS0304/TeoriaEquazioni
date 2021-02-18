@@ -45,5 +45,29 @@ namespace EquazioniLibrary
             double delta = (b * b) - (4 * a * c);
             return delta;
         }
+
+        public static string CalcoloEquazioneDiSecondoGrado(double a, double b, double c)
+        {
+            double delta = Delta(a, b, c);
+            if (delta == 0)
+            {
+                double x1 = -b / (2 * a);
+                return $"C'è solo una soluzione {x1}";
+            }
+            else if (delta > 0)
+            {
+                double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                return $"Ci sono due soluzioni {x1} e {x2}";
+            }
+            else if (delta < 0)
+            {
+                return "Non ci sono soluzioni, perchè l'equazione è IMPOSSIBILE";
+            }
+            else
+            {
+                return "Non è un'equazione di secondo grado";
+            }
+        }
     }   
 }
