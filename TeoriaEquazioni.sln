@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquazioniLibrary", "EquazioniLibrary\EquazioniLibrary.csproj", "{69286507-E306-41D7-B8AC-418F49AD852F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary", "EquazioniLibrary\EquazioniLibrary.csproj", "{69286507-E306-41D7-B8AC-418F49AD852F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquazioniLibrary.Test", "EquazioniLibrary.Test\EquazioniLibrary.Test.csproj", "{FBAF91FA-026D-456B-B026-D52C36814802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary.Test", "EquazioniLibrary.Test\EquazioniLibrary.Test.csproj", "{FBAF91FA-026D-456B-B026-D52C36814802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

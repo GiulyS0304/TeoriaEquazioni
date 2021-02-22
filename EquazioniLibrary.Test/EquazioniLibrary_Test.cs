@@ -16,10 +16,29 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
+        public void EquazioneDeterminata2()
+        {
+            double a = 9;
+            bool risultato_aspettato = true;
+            bool risultato_effettivo = Equazioni.IsDetermined(a);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
         public void EquazioneImpossibile()
         {
             double a = 0;
             double b = 10;
+            bool risultato_aspettato = true;
+            bool risultato_effettivo = Equazioni.IsInconsisted(a, b);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
+        public void EquazioneImpossibile2()
+        {
+            double a = 0;
+            double b = 15;
             bool risultato_aspettato = true;
             bool risultato_effettivo = Equazioni.IsInconsisted(a, b);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
@@ -41,6 +60,17 @@ namespace EquazioniLibrary.Test
             double b = 6;
             double c = 2;
             double risultato_aspettato = 20;
+            double risultato_effettivo = Equazioni.Delta(a, b, c);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
+        public void Delta2()
+        {
+            double a = 2;
+            double b = 3;
+            double c = -2;
+            double risultato_aspettato = 25;
             double risultato_effettivo = Equazioni.Delta(a, b, c);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
@@ -84,6 +114,16 @@ namespace EquazioniLibrary.Test
             double a = 3;
             double b = 9;
             string risultato_aspettato = $"{-3}";
+            string risultato_effettivo = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(risultato_aspettato, risultato_effettivo);
+        }
+
+        [TestMethod]
+        public void CalcoloEquazioneDiPrimoGrado2()
+        {
+            double a = 5;
+            double b = 10;
+            string risultato_aspettato = $"{-2}";
             string risultato_effettivo = Equazioni.EquationDegree1(a, b);
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
