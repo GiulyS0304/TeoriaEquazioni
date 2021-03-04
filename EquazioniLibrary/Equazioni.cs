@@ -78,7 +78,7 @@ namespace EquazioniLibrary
             {
                 risultato = "INDETERMINATA";
             }
-            else if (a != 0 && b == 0)
+            else if (IsInconsisted(a, b) == true)
             {
                 risultato = "IMPOSSIBILE";
             }
